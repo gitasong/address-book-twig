@@ -1,0 +1,72 @@
+<html>
+<head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <title>Edit Contact</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-md-6 display">
+                    <h1>Update Contacts</h1>
+
+                    {*% if contacts is not empty %}
+                        {*% for contact in contacts %}
+                        <h3>{*{ contact.getLastName }}, {*{ contact.getFirstName }}</h3>
+                        <ul>
+                            <li><strong>Street:</strong> {*{ contact.getStreet }}</li>
+                            <li><strong>City:</strong> {*{ contact.getCity }}</li>
+                            <li><strong>State:</strong> {*{ contact.getState }}</li>
+                            <li><strong>Zip/Postal Code:</strong> {*{ contact.getZip }}</li>
+                            <li><strong>Phone:</strong> {*{ contact.getPhone }}</li></li>
+                        </ul>
+                        {*% endfor %}
+                    {*% endif %}
+
+                </div>
+            </div>
+        </div> -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 main">
+                    <h2>Edit Contact</h2>
+                    <form action='/update_contact' method='post'>
+                        <div class="form-group">
+                            <label for='new_first_name'>First Name:</label>
+                            <input id='new_first_name' class="form-control" name='new_first_name' type='text' placeholder='Jane'>
+                        </div>
+                        <div class="form-group">
+                            <label for='new_last_name'>Last Name:</label>
+                            <input id='new_last_name' class="form-control" name='new_last_name' type='text' placeholder='Doe'>
+                        </div>
+                        <div class="form-group">
+                            <label for='new_street'>Street Address:</label>
+                            <input id='new_street' class="form-control" name='new_street' type='text' placeholder='123 Anywhere St.'>
+                        </div>
+                        <div class="form-group">
+                            <label for='new_city'>City:</label>
+                            <input id='new_city' class="form-control" name='new_city' type='text' placeholder='Anytown'>
+                        </div>
+                        <div class="form-group">
+                            <label for='new_state'>State:</label>
+                            <input id='new_state' class="form-control" name='new_state' type='text' placeholder="IL">
+                        </div>
+                        <div class="form-group">
+                            <label for='new_zip'>Zip/Postal Code:</label>
+                            <input id='new_zip' class="form-control" name='new_zip' type='text' placeholder="01234">
+                        </div>
+                        <div class="form-group">
+                            <label for='new_phone'>Phone:</label>
+                            <input id='new_phone' class="form-control" name='new_phone' type='text' placeholder="555-555-1212">
+                        </div>
+                        <br />
+                        <button type='submit' class="btn btn-warning">Update Contact</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

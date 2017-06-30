@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <link rel="stylesheet" href="/css/styles.css" type="text/css">
+        <title>Contact Updated!</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="container display">
+                <h1>Contact Updated!</h1>
+                <h3>{{ current_contact.getLastName }}, {{ current_contact.getFirstName }}</h3>
+                <ul>
+                    <li><strong>Street:</strong> {{ current_contact.getStreet }}</li>
+                    <li><strong>City:</strong> {{ current_contact.getCity }}</li>
+                    <li><strong>State:</strong> {{ current_contact.getState }}</li>
+                    <li><strong>Zip/Postal Code:</strong> {{ current_contact.getZip }}</li>
+                    <li><strong>Phone:</strong> {{ current_contact.getPhone }}</li></li>
+                </ul>
+                <a href="/">Home / View All Saved Contacts</a>
+            </div>
+        </div>
+    </body>
+</html>

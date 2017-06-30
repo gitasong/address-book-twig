@@ -13,11 +13,11 @@
                 {% for contact in contacts %}
                 <h3>{{ contact.getLastName }}, {{ contact.getFirstName }}</h3>
                 <ul>
-                    <li>{{ contact.getStreet }}</li>
-                    <li>{{ contact.getCity }}</li>
-                    <li>{{ contact.getState }}</li>
-                    <li>{{ contact.getZip }}</li>
-                    <li>{{ contact.getPhone }}</li>
+                    <li><strong>Street:</strong> {{ contact.getStreet }}</li>
+                    <li><strong>City:</strong> {{ contact.getCity }}</li>
+                    <li><strong>State:</strong> {{ contact.getState }}</li>
+                    <li><strong>Zip/Postal Code:</strong> {{ contact.getZip }}</li>
+                    <li><strong>Phone:</strong> {{ contact.getPhone }}</li></li>
                 </ul>
                 {% endfor %}
             {% endif %}

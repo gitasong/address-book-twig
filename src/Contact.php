@@ -57,12 +57,12 @@ class Contact
 
     function setFirstName($new_first_name)
     {
-        $this->name = (string) $new_first_name;
+        $this->first_name = (string) $new_first_name;
     }
 
     function setLastName($new_last_name)
     {
-        $this->name = (string) $new_last_name;
+        $this->last_name = (string) $new_last_name;
     }
 
     function setStreet($new_street)

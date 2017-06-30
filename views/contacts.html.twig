@@ -21,6 +21,9 @@
                             <li><strong>Zip/Postal Code:</strong> {{ contact.getZip }}</li>
                             <li><strong>Phone:</strong> {{ contact.getPhone }}</li></li>
                         </ul>
+                        <form action='/update_contact' method='post'>
+                            <button type='submit' class="btn btn-warning {{ contact.getLastName }} {{ contact.getFirstName }}">Update Contact</button>
+                        </form>
                         {% endfor %}
                     {% endif %}
                 </div>

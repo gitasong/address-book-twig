@@ -25,6 +25,9 @@
                             <button type='submit' class="btn btn-warning {{ contact.getLastName }} {{ contact.getFirstName }}">Edit Contact</button>
                         </form>
                         {% endfor %}
+                        <form action='/delete_contacts' method='post'>
+                            <button type='submit' class="btn btn-danger">Clear All</button>
+                        </form>
                     {% endif %}
                 </div>
             </div>
@@ -65,10 +68,6 @@
                         </div>
                         <br />
                         <button type='submit' class="btn btn-primary">Add Contact</button>
-                    </form>
-
-                    <form action='/delete_contacts' method='post'>
-                        <button type='submit' class="btn btn-danger">Clear All</button>
                     </form>
                 </div>
             </div>

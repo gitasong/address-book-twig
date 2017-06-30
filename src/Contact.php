@@ -3,19 +3,21 @@ class Contact
 {
     private $first_name;
     private $last_name;
-    private $phone;
+    private $street;
     private $city;
     private $state;
     private $zip;
+    private $phone;
 
-    function __construct($first_name, $last_name, $phone, $city, $state, $zip)
+    function __construct($first_name, $last_name, $street, $city, $state, $zip, $phone)
     {
         $this->first_name = $first_name;
         $this->last_name = $last_name;
-        $this->phone = $phone;
+        $this->street = $street;
         $this->city = $city;
         $this->state = $state;
         $this->zip = $zip;
+        $this->phone = $phone;
     }
 
     function getFirstName()
@@ -28,9 +30,9 @@ class Contact
         return $this->last_name;
     }
 
-    function getPhone()
+    function getStreet()
     {
-        return $this->phone;
+        return $this->street;
     }
 
     function getCity()
@@ -48,6 +50,11 @@ class Contact
         return $this->zip;
     }
 
+    function getPhone()
+    {
+        return $this->phone;
+    }
+
     function setFirstName($new_first_name)
     {
         $this->name = (string) $new_first_name;
@@ -58,9 +65,9 @@ class Contact
         $this->name = (string) $new_last_name;
     }
 
-    function setPhone($new_phone)
+    function setStreet($new_street)
     {
-        $this->phone = (integer) $new_phone;  // need to change type if phone # comes in formatted, ex: 555-555-1212
+        $this->street = (string) $new_street;
     }
 
     function setCity($new_city)
@@ -76,6 +83,11 @@ class Contact
     function setZip($new_zip)
     {
         $this->zip = (integer) $new_zip;
+    }
+
+    function setPhone($new_phone)
+    {
+        $this->phone = (integer) $new_phone;  // need to change type if phone # comes in formatted, ex: 555-555-1212
     }
 
     function save()  // pushes each new contact to array; saves in $_SESSION variable 'list_of_contacts'

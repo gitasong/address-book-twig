@@ -12,6 +12,7 @@
                 {% for contact in contacts %}
                 <h2>{{ contact.getLastName }}, {{ contact.getFirstName }}</h2>
                 <ul>
+                    <li>{{ contact.getStreet }}</li>
                     <li>{{ contact.getCity }}</li>
                     <li>{{ contact.getState }}</li>
                     <li>{{ contact.getZip }}</li>
@@ -31,6 +32,10 @@
                 <div class="form-group">
                     <label for='last_name'>Last Name:</label>
                     <input id='last_name' name='last_name' type='text'>
+                </div>
+                <div class="form-group">
+                    <label for='street'>Street Address:</label>
+                    <input id='street' name='street' type='text'>
                 </div>
                 <div class="form-group">
                     <label for='city'>City:</label>

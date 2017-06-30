@@ -10,7 +10,7 @@
 
             {% if contacts is not empty %}
                 {% for contact in contacts %}
-                <h2>{{ contact.getLastName }}, {{ contact.getFirstName }}</h2>
+                <h3>{{ contact.getLastName }}, {{ contact.getFirstName }}</h3>
                 <ul>
                     <li>{{ contact.getStreet }}</li>
                     <li>{{ contact.getCity }}</li>

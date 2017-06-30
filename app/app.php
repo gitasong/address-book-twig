@@ -24,5 +24,10 @@
         return $app["twig"]->render("contact_created.html.twig", array("new_contact" => $new_contact));
     });
 
+    $app->post("/delete_contacts", function() use ($app) {
+        Contact::deleteAll();
+        return $app["twig"]->render("contacts_deleted.html.twig");
+    });
+
     return $app;
 ?>

@@ -6,12 +6,12 @@
     <body>
         <div class="container-fluid">
             <h1>Contact Created!</h1>
-            <h2>{{ contact.getLastName }}, {{ contact.getFirstName }}</h2>
+            <h2>{{ new_contact.getLastName }}, {{ new_contact.getFirstName }}</h2>
             <ul>
-                <li><strong>City:</strong> {{ contact.getCity }}</li>
-                <li><strong>State:</strong> {{ contact.getState }}</li>
-                <li><strong>Zip/Postal Code:</strong> {{ contact.getZip }}</li>
-                <li><strong>Phone:</strong> {{ contact.getPhone }}</li></li>
+                <li><strong>City:</strong> {{ new_contact.getCity }}</li>
+                <li><strong>State:</strong> {{ new_contact.getState }}</li>
+                <li><strong>Zip/Postal Code:</strong> {{ new_contact.getZip }}</li>
+                <li><strong>Phone:</strong> {{ new_contact.getPhone }}</li></li>
             </ul>
             <a href="/">Home / View All Saved Contacts</a>
         </div>

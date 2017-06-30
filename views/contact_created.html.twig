@@ -17,6 +17,10 @@
                     <li><strong>Zip/Postal Code:</strong> {{ new_contact.getZip }}</li>
                     <li><strong>Phone:</strong> {{ new_contact.getPhone }}</li></li>
                 </ul>
+                <form action='/edit_contact' method='post'>
+                    <button type='submit' class="btn btn-warning">Edit Contact</button>
+                </form>
+                <br/>
                 <a href="/">Home / View All Saved Contacts</a>
             </div>
         </div>

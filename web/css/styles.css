@@ -1,3 +1,16 @@
+body {
+    background-image: url("/img/vintage_floral.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.display, .main {
+    background-color: #efefde;
+    padding: 20px 40px 40px 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: #337ab7;
 }

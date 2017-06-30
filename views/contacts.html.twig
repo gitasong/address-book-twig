@@ -7,25 +7,29 @@
 <body>
     <div class="container-fluid">
         <div class="container">
-            <h1>My Contacts</h1>
+            <div class="row">
+                <div class="col-md-6 display">
+                    <h1>My Contacts</h1>
 
-            {% if contacts is not empty %}
-                {% for contact in contacts %}
-                <h3>{{ contact.getLastName }}, {{ contact.getFirstName }}</h3>
-                <ul>
-                    <li><strong>Street:</strong> {{ contact.getStreet }}</li>
-                    <li><strong>City:</strong> {{ contact.getCity }}</li>
-                    <li><strong>State:</strong> {{ contact.getState }}</li>
-                    <li><strong>Zip/Postal Code:</strong> {{ contact.getZip }}</li>
-                    <li><strong>Phone:</strong> {{ contact.getPhone }}</li></li>
-                </ul>
-                {% endfor %}
-            {% endif %}
+                    {% if contacts is not empty %}
+                        {% for contact in contacts %}
+                        <h3>{{ contact.getLastName }}, {{ contact.getFirstName }}</h3>
+                        <ul>
+                            <li><strong>Street:</strong> {{ contact.getStreet }}</li>
+                            <li><strong>City:</strong> {{ contact.getCity }}</li>
+                            <li><strong>State:</strong> {{ contact.getState }}</li>
+                            <li><strong>Zip/Postal Code:</strong> {{ contact.getZip }}</li>
+                            <li><strong>Phone:</strong> {{ contact.getPhone }}</li></li>
+                        </ul>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
         </div>
 
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 main">
                     <h2>Add A Contact</h2>
                     <form action='/create_contact' method='post'>
                         <div class="form-group">

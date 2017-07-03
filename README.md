@@ -10,11 +10,13 @@ Simple address book app allowing one to add individual contacts, display and del
 
 ## Setup/Installation Requirements
 
-* You'll need to have PHP installed on your computer. For install instructions, see https://www.learnhowtoprogram.com/php/getting-started-with-php/installing-php.
-* Clone the project directory from Terminal using <git clone https://github.com/gitasong/address-book-twig.git>.
+* Install PHP on your computer following the instructions at https://www.learnhowtoprogram.com/php/getting-started-with-php/installing-php.
 * Install Composer on your computer following the install instructions at https://www.learnhowtoprogram.com/php/getting-started-with-php/installing-composer-and-configuration-for-mac for Mac and https://www.learnhowtoprogram.com/php/getting-started-with-php/installing-composer-and-configuration-for-windows for Windows.
-* In Terminal, navigate to the main project directory and install the necessary dependencies (Silex and Twig) using <composer install>.
-* In Terminal, navigate to the web folder inside the main project directory and start your PHP server using <php -S localhost:8000>.
+* Launch Terminal and clone the project directory to your desktop using <git clone https://github.com/gitasong/address-book-twig.git>.
+* In Terminal, change directories into the project directory using <cd address-book-twig>.
+* In Terminal, navigate to the main project directory and install Silex and Twig using <composer install>.
+* In Terminal, navigate to the web folder inside the main project directory using <cd web>.
+* Open a new Terminal window using <Cmd-T> and start your PHP server using <php -S localhost:8000>.
 * Type localhost:8000 in your browser URL window to start the app.
 
 ## Known Bugs
